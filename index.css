@@ -1,3 +1,8 @@
-img {
-  width: 100%;
+#background-container {
+  background-image: url(/assets/massage-2350548_1920.jpg);
+  background-size: cover;
+}
+
+#logo {
+  width: 100px;
 }

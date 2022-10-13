@@ -8,5 +8,14 @@
 }
 
 #paket-title {
-  color: #4A4A4A;
+  color: #0a0a0a;
+}
+
+#date {
+  color: #c2c2c2;
+  border-color: #c2c2c2;
+}
+
+#date-tag {
+  color: #c2c2c2;
 }

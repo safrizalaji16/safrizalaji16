@@ -18,52 +18,42 @@
 <body>
   <section id="background-container" class="hero is-info is-fullheight">
     <div class="hero-head">
-      <nav class="navbar">
-        <div class="container">
-          <div class="navbar-brand">
-            <a id="logo" class="navbar-item" href="../">
-              <img src="/assets/kindpng_1846910.png" alt="Logo">
+
+      <!-- NavBar va a todo lo ancho -->
+      <nav class="navbar" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand m-4">
+          <a class="navbar-item" href="https://bulma.io">
+            <img src="/assets/kindpng_1846910.png" height="28">
+          </a>
+        </div>
+
+        <div class="navbar-menu">
+
+          <div class="navbar-end">
+            <a class="navbar-item">
+              PIJIT
             </a>
-          </div>
-          <div id="navbarMenu" class="navbar-menu">
-            <div class="navbar-end">
-              <span class="navbar-item">
-                <a class="button is-white is-outlined" href="#">
-                  <span class="icon">
-                    <i class="fa fa-home"></i>
-                  </span>
-                  <span>Home</span>
-                </a>
-              </span>
-              <span class="navbar-item">
-                <a class="button is-white is-outlined" href="#">
-                  <span class="icon">
-                    <i class="fa fa-superpowers"></i>
-                  </span>
-                  <span>Examples</span>
-                </a>
-              </span>
-              <span class="navbar-item">
-                <a class="button is-white is-outlined" href="#">
-                  <span class="icon">
-                    <i class="fa fa-book"></i>
-                  </span>
-                  <span>Documentation</span>
-                </a>
-              </span>
-              <span class="navbar-item">
-                <a class="button is-white is-outlined"
-                  href="https://github.com/BulmaTemplates/bulma-templates/blob/master/templates/landing.html">
-                  <span class="icon">
-                    <i class="fa fa-github"></i>
-                  </span>
-                  <span>View Source</span>
-                </a>
-              </span>
-            </div>
+
+            <a class="navbar-item">
+              PANGGILAN
+            </a>
+
+            <a class="navbar-item">
+              KESEHATAN
+            </a>
+
+            <a class="navbar-item">
+              MEGATRON
+            </a>
+
+            <a class="navbar-item">
+              <span id="typewriter"></span>
+            </a>
+
           </div>
         </div>
       </nav>
+
     </div>
     <div class="hero-body">
       <div class="container has-text-centered">
@@ -102,7 +92,8 @@
                 <div id="date-container" class="column mt-2 is-outlined">
                   <form action="/action_page.php">
                     <label id="date-tag">Pilih Tanggal:</label>
-                    <input id="date" type="date">
+                    <!-- <input id="date" type="date"> -->
+                    <input type="datetime-local" id="date">
                   </form>
                 </div>
               </div>
@@ -120,7 +111,33 @@
       </div>
     </div>
   </section>
+
+  <footer class="footer">
+    <div class="content has-text-centered">
+      <p>
+        <strong>PPKM - Pijat Panggilan Kesehatan MEGATRON</strong> by <a
+          href="https://en.wikipedia.org/wiki/Megatron">MEGATRON</a>. Setelah Pijit Badan Terasa Sekuat MEGATRON . The
+        source code is licensed
+        <a href="https://hacktiv8.com/">HACKTIV8</a>
+      </p>
+    </div>
+  </footer>
+
   <script async type="text/javascript" src="../js/bulma.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/TypewriterJS/2.13.1/core.min.js"></script>
+  <script>
+    new Typewriter('#typewriter', {
+      strings: ['PPKM', 'PPKM'],
+      autoStart: true,
+      loop: true,
+    });
+  </script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      once: true
+    });
+  </script>
 </body>
 
 </html>

@@ -1,4 +1,4 @@
-#background-container {
+#home-page {
   background-image: url(/assets/massage-2350548_1920.jpg);
   background-size: cover;
 }
@@ -25,3 +25,7 @@
   color: #c2c2c2;
   font-size: 1rem;
 }
+
+/* #order-page {
+  display: none;
+} */

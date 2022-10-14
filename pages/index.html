@@ -16,9 +16,8 @@
 </head>
 
 <body>
-  <section id="background-container" class="hero is-info is-fullheight">
+  <section class="hero is-white is-small is-white">
     <div class="hero-head">
-
       <!-- NavBar va a todo lo ancho -->
       <nav class="navbar" role="navigation" aria-label="main navigation">
         <div class="navbar-brand m-4">
@@ -53,7 +52,11 @@
           </div>
         </div>
       </nav>
+  </section>
 
+  <!-- home page -->
+  <section id="home-page">
+    <div id="header"></div>
     </div>
     <div class="hero-body">
       <div class="container has-text-centered">
@@ -69,30 +72,29 @@
               <div class="columns my-0">
                 <div class="field column my-0 is-three-quarter">
                   <div class="control">
-                    <input class="input" type="name" placeholder="Name">
+                    <input id="name" class="input" type="name" placeholder="Name">
                   </div>
                 </div>
                 <div class="gender column">
                   <div class="control">
-                    <input class="input" type="text" placeholder="Gender">
+                    <input id="gender" class="input" type="text" placeholder="Gender">
                   </div>
                 </div>
               </div>
               <div class="field">
                 <div class="control">
-                  <input class="input" type="text" placeholder="Address">
+                  <input id="address" class="input" type="text" placeholder="Address">
                 </div>
               </div>
               <div class="columns">
                 <div class="Phone column is-three-quarter">
                   <div class="control">
-                    <input class="input" type="number" placeholder="Phone Number">
+                    <input id="phone-number" class="input" type="number" placeholder="Phone Number">
                   </div>
                 </div>
                 <div id="date-container" class="column mt-2 is-outlined">
                   <form action="/action_page.php">
                     <label id="date-tag">Pilih Tanggal:</label>
-                    <!-- <input id="date" type="date"> -->
                     <input type="datetime-local" id="date">
                   </form>
                 </div>
@@ -103,13 +105,470 @@
                   I agree to the <a href="#">terms and conditions</a>
                 </label>
               </div>
-              <button class="button is-primary mt-2">Order</button>
+              <button id="home-button" class="button is-primary mt-2">Order</button>
             </form>
           </div>
           <br>
         </div>
       </div>
     </div>
+  </section>
+
+  <!-- order page -->
+  <section id="order-page" style="display: none;">
+    <section class=" hero is-white is-fullheight">
+      <div class="hero-body">
+        <div class="container">
+          <div class="columns  is-vcentered reverse-columns">
+            <div class="column
+          is-10-mobile 
+          is-10-tablet 
+          is-5-desktop 
+          is-5-widescreen 
+          is-5-fullhd " data-aos="fade-down">
+              <h1 class="title titled is-1 mb-6">
+                Apakah Kamu Sudah Vaksin?
+              </h1>
+              <div class="buttons">
+                <button class="button is-yellow box">Sudah dong!</button>
+                <button class="button box">Oh iya lupa</button>
+              </div>
+            </div>
+            <div data-aos="fade-right" class="column
+          is-10-mobile 
+          is-10-tablet 
+          is-4-desktop 
+          is-7-widescreen 
+          is-4-fullhd is-offset-1-fullhd">
+              <figure class="image is-square">
+                <img src="../images/undraw_Camera_re_cnp4.svg">
+              </figure>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="hero is-white is-fullheight">
+      <div class="hero-body">
+        <div class="container">
+          <div class="columns  is-vcentered">
+            <div data-aos="fade-left" class="column
+          is-10-mobile is-offset-1-mobile
+          is-10-tablet is-offset-1-tablet
+          is-4-desktop is-offset-1-desktop
+          is-4-widescreen is-offset-1-widescreen
+          is-4-fullhd is-offset-1-fullhd">
+              <figure class="image is-square">
+                <img src="../images/undraw_Camera_re_cnp4.svg">
+              </figure>
+            </div>
+            <div data-aos="fade-down" class="column
+          is-10-mobile is-offset-1-mobile
+          is-10-tablet is-offset-1-tablet
+          is-5-desktop is-offset-1-desktop
+          is-5-widescreen is-offset-1-widescreen
+          is-5-fullhd is-offset-1-fullhd">
+              <h1 class="titled title is-1 mb-6">
+                Apakah Kamu Memiliki Keluhan?
+              </h1>
+              <div class="box">
+                <div class="field">
+                  <div class="control">
+                    <textarea class="textarea" placeholder="Tulis Keluhanmu Kaka!"></textarea>
+                  </div>
+                </div>
+                <button class="button is-primary">Submit</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="hero is-white is-fullheight">
+      <div class="hero-body">
+        <div class="container">
+          <div class="columns  is-vcentered reverse-columns">
+            <div data-aos="fade-right" class="column
+          is-10-mobile is-offset-1-mobile
+          is-10-tablet is-offset-1-tablet
+          is-5-desktop is-offset-1-desktop
+          is-5-widescreen is-offset-1-widescreen
+          is-5-fullhd is-offset-1-fullhd">
+              <h1 class="title titled is-1 mb-6">
+                Pilih Paket yang Kamu Inginkan!
+              </h1>
+              <div class="box">
+                <label class="label">Paket Pijit</label>
+                <div>
+                  <div class="select is-normal">
+                    <select>
+                      <option selected disabled>--- Pilih Paket ---</option>
+                      <option>Premium: 120 Minutes</option>
+                      <option>Regular: 90 Minutes</option>
+                      <option>Other</option>
+                    </select>
+                  </div>
+                  <div class="field">
+                    <label class="label">Other</label>
+                    <div class="control">
+                      <input class="input" type="text" placeholder="Paket apa boss?">
+                    </div>
+                  </div>
+                  <button class="button is-primary">Pilih Paket</button>
+                </div>
+              </div>
+            </div>
+            <div data-aos="fade-down" class="column
+          is-10-mobile is-offset-1-mobile
+          is-10-tablet is-offset-1-tablet
+          is-4-desktop is-offset-1-desktop
+          is-4-widescreen is-offset-1-widescreen
+          is-4-fullhd is-offset-1-fullhd" data-aos="fade-up">
+              <figure class="image is-square">
+                <img src="../images/undraw_Camera_re_cnp4.svg">
+              </figure>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="hero is-white is-fullheight">
+      <div class="hero-body">
+        <div class="container">
+          <div class="columns  is-vcentered">
+            <div data-aos="fade-left" class="column
+          is-10-mobile is-offset-1-mobile
+          is-10-tablet is-offset-1-tablet
+          is-4-desktop is-offset-1-desktop
+          is-4-widescreen is-offset-1-widescreen
+          is-4-fullhd is-offset-1-fullhd">
+              <figure class="image is-square">
+                <img src="../images/undraw_Camera_re_cnp4.svg">
+              </figure>
+            </div>
+            <div data-aos="fade-down" class="column
+          is-10-mobile is-offset-1-mobile
+          is-10-tablet is-offset-1-tablet
+          is-5-desktop is-offset-1-desktop
+          is-5-widescreen is-offset-1-widescreen
+          is-5-fullhd is-offset-1-fullhd">
+              <h1 class="titled title is-1 mb-6">
+                Kamu Mau Tambahan Apa Nichhhh?
+              </h1>
+              <div class="box">
+                <label class="label">Tambahan Pijit</label>
+                <div>
+                  <div class="select is-normal">
+                    <select>
+                      <option selected disabled>--- Pilih Tambahan ---</option>
+                      <option>Kerokan</option>
+                      <option>Bekam</option>
+                      <option>Totok Wajah</option>
+                      <option>Other</option>
+                    </select>
+                  </div>
+                  <div class="field">
+                    <label class="label">Other</label>
+                    <div class="control">
+                      <input class="input" type="text" placeholder="Tambah apa boss?">
+                    </div>
+                  </div>
+                  <button class="button is-primary">Pilih Paket</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="hero is-white is-fullheight">
+      <div class="hero-body">
+        <div class="container">
+          <div class="columns  is-vcentered reverse-columns">
+            <div class="column
+          is-10-mobile 
+          is-10-tablet 
+          is-5-desktop 
+          is-5-widescreen 
+          is-5-fullhd " data-aos="fade-down">
+              <h1 class="title titled is-1 mb-6">
+                Pilihlah Aroma Minyak yang Kamu Inginkan!
+              </h1>
+              <div>
+                <div class="box is-size-6">
+                  <label class="label">Aroma Minyak</label>
+                  <div>
+                    <div class="select is-normal">
+                      <select>
+                        <option selected disabled>--- Pilih Minyak ---</option>
+                        <option>Peppermint: Meredakan Masalah Pencernaan</option>
+                        <option>Rosemary: Menghilangkan Rasa Nyeri</option>
+                        <option>Lavender: Menenangkan Tubuh dan Pikiran</option>
+                        <option>Lemon: Mengobati Stres dan Insomnia</option>
+                        <option>Pohon Teh: Mengobati Batuk dan Pilek</option>
+                      </select>
+                    </div>
+                    <button class="button is-primary">Pilih Minyak</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div data-aos="fade-right" class="column
+          is-10-mobile 
+          is-10-tablet 
+          is-4-desktop 
+          is-7-widescreen 
+          is-4-fullhd is-offset-1-fullhd">
+              <figure class="image is-square">
+                <img src="../images/undraw_Camera_re_cnp4.svg">
+              </figure>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="hero is-white is-fullheight">
+      <div class="hero-body">
+        <div class="container">
+          <div class="columns  is-vcentered">
+            <div data-aos="fade-left" class="column
+          is-10-mobile is-offset-1-mobile
+          is-10-tablet is-offset-1-tablet
+          is-4-desktop is-offset-1-desktop
+          is-4-widescreen is-offset-1-widescreen
+          is-4-fullhd is-offset-1-fullhd">
+              <figure class="image is-square">
+                <img src="../images/undraw_Camera_re_cnp4.svg">
+              </figure>
+            </div>
+            <div data-aos="fade-down" class="column
+          is-10-mobile is-offset-1-mobile
+          is-10-tablet is-offset-1-tablet
+          is-5-desktop is-offset-1-desktop
+          is-5-widescreen is-offset-1-widescreen
+          is-5-fullhd is-offset-1-fullhd">
+              <h1 class="titled title is-1 mb-6">
+                Mau Pilih yang Mijit Nggak?
+              </h1>
+              <div>
+                <div class="box is-size-6">
+                  <div class="field">
+                    <label class="label">Nama Tukang Pijit</label>
+                    <div class="control">
+                      <input class="input" placeholder="Nama Doi ">
+                      <div class="field">
+                        <label class="label"> Notes </label>
+                        <div class="control">
+                          <input class="input" placeholder="Mau Tambah Apa Nichh?">
+                        </div>
+
+                      </div>
+                      <button class="button is-primary">NEXT</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="hero is-white is-fullheight">
+      <div class="hero-body">
+        <div class="container">
+          <div class="columns  is-vcentered reverse-columns">
+            <div class="column
+          is-10-mobile 
+          is-10-tablet 
+          is-5-desktop 
+          is-5-widescreen 
+          is-5-fullhd " data-aos="fade-down">
+              <h1 class="title titled is-1 mb-6">
+                Kasih Tau Kami Apa Lagi yang Kamu Butuhakan!
+              </h1>
+              <div class="box">
+                <div class="field">
+                  <div class="control">
+                    <textarea class="textarea" placeholder="Tulis Kebutuhan Tambahanmu Kaka!"></textarea>
+                  </div>
+                </div>
+                <button class="button is-primary">Submit</button>
+              </div>
+            </div>
+            <div data-aos="fade-right" class="column
+          is-10-mobile 
+          is-10-tablet 
+          is-4-desktop 
+          is-7-widescreen 
+          is-4-fullhd is-offset-1-fullhd">
+              <figure class="image is-square">
+                <img src="../images/undraw_Camera_re_cnp4.svg">
+              </figure>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="hero is-medium has-text-centered">
+      <div class="columns is-mobile">
+        <div class="column is-three-fifths is-offset-one-fifth">
+          <button id="order-button" class="button is-primary">Lanjut ke Metode Pembayaran</button>
+        </div>
+      </div>
+      <div class="hero-body">
+        <div class="container">
+          <div class="columns is-centered">
+            <div data-aos="zoom-in-up" class="column is-8">
+              <h1 class="title titled is-1 mb-6">
+                <span id="type-down"></span>
+              </h1>
+              <h1 class="title titled is-1 mb-6">
+                Pijit Panggilan Kesehatan MEGATRON
+              </h1>
+              <h2 class="subtitle subtitled">
+                Setelah Pijit Badan Terasa Sekuat MEGATRON
+              </h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </section>
+
+  <!-- output page -->
+  <section id="output-page" style="display: none;">
+    <section class="hero ">
+      <div class="hero-body">
+        <div class="container">
+          <div class="columns">
+            <div class="column is-8 is-offset-2">
+              <figure class="image is-16by9">
+                <img src="../images/first-post.png" alt="">
+              </figure>
+            </div>
+          </div>
+
+          <section class="section">
+            <div class="columns">
+              <div class="column is-8 is-offset-2">
+                <div class="content is-medium">
+                  <h2 class="subtitle is-4">December 25, 2022 tanggal pijet</h2>
+                  <h1 class="title">Your Order</h1>
+                  <table class="table">
+                    <thead>
+                      <tr>
+                        <!-- <th><abbr title="Position">No</abbr></th> -->
+                        <th>Title</th>
+                        <th>Your Order</th>
+                      </tr>
+                    </thead>
+                    <tfoot>
+                      <tr>
+                        <th>Total Pembayaran :</th>
+                        <!-- <th></th> -->
+                        <th>50.000.000</th>
+                      </tr>
+                    </tfoot>
+                    <tbody>
+                      <tr>
+                        <td><a href="https://en.wikipedia.org/wiki/Leicester_City_F.C." title="Nama">Nama</a>
+                        </td>
+                        <td id="name-value">Safrizal</td>
+                      </tr>
+                      <tr>
+                        <td><a href="https://en.wikipedia.org/wiki/Arsenal_F.C." title="Gender">Gender</a></td>
+                        <td>Male</td>
+                      </tr>
+                      <tr>
+                        <td><a href="https://en.wikipedia.org/wiki/Tottenham_Hotspur_F.C." title="Address">Address</a>
+                        </td>
+                        <td>Jakarta Selatan</td>
+                      </tr>
+                      <tr>
+                        <td><a href="https://en.wikipedia.org/wiki/Manchester_City_F.C." title="Phone Number">Phone
+                            Number</a></td>
+                        <td>08135648121</td>
+                      </tr>
+                      <tr>
+                        <td><a href="https://en.wikipedia.org/wiki/Manchester_City_F.C." title="Vaksin">Vaksin</a></td>
+                        <td>Sudah dong!</td>
+                      </tr>
+                      <tr>
+                        <td><a href="https://en.wikipedia.org/wiki/Manchester_City_F.C." title="Keluhan Kamu">Keluhan
+                            Kamu</a></td>
+                        <td>Anu Kaka</td>
+                      </tr>
+                      <tr>
+                        <td><a href="https://en.wikipedia.org/wiki/Manchester_City_F.C."
+                            title="Paket yang Kamu Pilih">Paket yang Kamu Pilih</a></td>
+                        <td>Plus Plus</td>
+                      </tr>
+                      <tr>
+                        <td><a href="https://en.wikipedia.org/wiki/Manchester_City_F.C."
+                            title="Tambahan yang Kamu Minta">Tambahan yang Kamu Minta</a></td>
+                        <td>Yang Cakep</td>
+                      </tr>
+                      <tr>
+                        <td><a href="https://en.wikipedia.org/wiki/Manchester_City_F.C."
+                            title="Aroma yang Kamu Pilih">Aroma yang Kamu Pilih</a></td>
+                        <td>Mawar</td>
+                      </tr>
+                      <tr>
+                        <td><a href="https://en.wikipedia.org/wiki/Manchester_City_F.C."
+                            title="Pemijit yang Kamu Pilih">Pemijit yang Kamu Pilih</a></td>
+                        <td>Pak Rebo</td>
+                      </tr>
+                      <tr>
+                        <td><a href="https://en.wikipedia.org/wiki/Manchester_City_F.C."
+                            title="Kebutuhan Tambahan Kamu">Kebutuhan Tambahan Kamu</a></td>
+                        <td>Bawain Handuk kak</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <p>Pembayaran hanya menerima tunai</p>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <div class="is-divider"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- newsletter -->
+    <section class="section">
+      <div class="columns">
+        <div class="column is-10 is-offset-1">
+          <div class="container has-text-centered is-fluid">
+            <div class="hero is-light">
+              <div class="hero-body">
+                <h2 class="title is-4">Sign up for our newsletter</h2>
+                <div class="column is-6 is-offset-3">
+                  <div class="field has-addons has-addons-centered">
+                    <div class="control is-expanded">
+                      <input class="input " type="text" placeholder="Email address">
+                    </div>
+                    <div class="control">
+                      <a class="button is-info">
+                        Subscribe
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
   </section>
 
   <footer class="footer">
@@ -138,6 +597,7 @@
       once: true
     });
   </script>
+  <script src="/scripts/index.js"></script>
 </body>
 
 </html>

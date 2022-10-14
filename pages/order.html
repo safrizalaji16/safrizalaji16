@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.1/css/bulma.min.css">
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+    integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <style>
+    @media(max-width: 500px) {
+      .reverse-columns {
+        flex-direction: column-reverse;
+        display: flex;
+      }
+    }
+
+    .titled {
+      font-family: 'Merriweather', serif !important;
+      font-size: 58px !important;
+      font-weight: 400 !important;
+      line-height: 64px !important;
+    }
+
+    .subtitled {
+      font-family: 'Merriweather', serif !important;
+      font-size: 22px !important;
+      font-weight: 400 !important;
+      line-height: 36px !important;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- NavBar va a todo lo ancho -->
+  <nav class="navbar" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+      <!-- <a class="navbar-item" href="https://bulma.io"> -->
+      <!-- <img src="https://bulma.io/images/bulma-logo.png" width="112" height="28"> -->
+      <!-- </a> -->
+    </div>
+
+    <div class="navbar-menu">
+
+      <div class="navbar-end">
+        <a class="navbar-item">
+          PIJIT
+        </a>
+
+        <a class="navbar-item">
+          PANGGILAN
+        </a>
+
+        <a class="navbar-item">
+          KESEHATAN
+        </a>
+
+        <a class="navbar-item">
+          MEGATRON
+        </a>
+
+        <a class="navbar-item">
+          <span id="typewriter"></span>
+        </a>
+
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero del producto -->
+  <section class="hero is-white is-fullheight">
+    <div class="hero-body">
+      <div class="container">
+        <div class="columns  is-vcentered reverse-columns">
+          <div class="column
+          is-10-mobile 
+          is-10-tablet 
+          is-5-desktop 
+          is-5-widescreen 
+          is-5-fullhd " data-aos="fade-down">
+            <h1 class="title titled is-1 mb-6">
+              Apakah Kamu Sudah Vaksin?
+            </h1>
+            <div class="buttons">
+              <button class="button is-yellow box">Sudah dong!</button>
+              <button class="button box">Oh iya lupa</button>
+            </div>
+          </div>
+          <div data-aos="fade-right" class="column
+          is-10-mobile 
+          is-10-tablet 
+          is-4-desktop 
+          is-7-widescreen 
+          is-4-fullhd is-offset-1-fullhd">
+            <figure class="image is-square">
+              <img src="../images/undraw_Camera_re_cnp4.svg">
+            </figure>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="hero is-white is-fullheight">
+    <div class="hero-body">
+      <div class="container">
+        <div class="columns  is-vcentered">
+          <div data-aos="fade-left" class="column
+          is-10-mobile is-offset-1-mobile
+          is-10-tablet is-offset-1-tablet
+          is-4-desktop is-offset-1-desktop
+          is-4-widescreen is-offset-1-widescreen
+          is-4-fullhd is-offset-1-fullhd">
+            <figure class="image is-square">
+              <img src="../images/undraw_Camera_re_cnp4.svg">
+            </figure>
+          </div>
+          <div data-aos="fade-down" class="column
+          is-10-mobile is-offset-1-mobile
+          is-10-tablet is-offset-1-tablet
+          is-5-desktop is-offset-1-desktop
+          is-5-widescreen is-offset-1-widescreen
+          is-5-fullhd is-offset-1-fullhd">
+            <h1 class="titled title is-1 mb-6">
+              Apakah Kamu Memiliki Keluhan?
+            </h1>
+            <div class="box">
+              <div class="field">
+                <div class="control">
+                  <textarea class="textarea" placeholder="Tulis Keluhanmu Kaka!"></textarea>
+                </div>
+              </div>
+              <button class="button is-primary">Submit</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="hero is-white is-fullheight">
+    <div class="hero-body">
+      <div class="container">
+        <div class="columns  is-vcentered reverse-columns">
+          <div data-aos="fade-right" class="column
+          is-10-mobile is-offset-1-mobile
+          is-10-tablet is-offset-1-tablet
+          is-5-desktop is-offset-1-desktop
+          is-5-widescreen is-offset-1-widescreen
+          is-5-fullhd is-offset-1-fullhd">
+            <h1 class="title titled is-1 mb-6">
+              Pilih Paket yang Kamu Inginkan!
+            </h1>
+            <div class="box">
+              <label class="label">Paket Pijit</label>
+              <div>
+                <div class="select is-normal">
+                  <select>
+                    <option selected disabled>--- Pilih Paket ---</option>
+                    <option>Premium: 120 Minutes</option>
+                    <option>Regular: 90 Minutes</option>
+                    <option>Other</option>
+                  </select>
+                </div>
+                <div class="field">
+                  <label class="label">Other</label>
+                  <div class="control">
+                    <input class="input" type="text" placeholder="Paket apa boss?">
+                  </div>
+                </div>
+                <button class="button is-primary">Pilih Paket</button>
+              </div>
+            </div>
+          </div>
+          <div data-aos="fade-down" class="column
+          is-10-mobile is-offset-1-mobile
+          is-10-tablet is-offset-1-tablet
+          is-4-desktop is-offset-1-desktop
+          is-4-widescreen is-offset-1-widescreen
+          is-4-fullhd is-offset-1-fullhd" data-aos="fade-up">
+            <figure class="image is-square">
+              <img src="../images/undraw_Camera_re_cnp4.svg">
+            </figure>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="hero is-white is-fullheight">
+    <div class="hero-body">
+      <div class="container">
+        <div class="columns  is-vcentered">
+          <div data-aos="fade-left" class="column
+          is-10-mobile is-offset-1-mobile
+          is-10-tablet is-offset-1-tablet
+          is-4-desktop is-offset-1-desktop
+          is-4-widescreen is-offset-1-widescreen
+          is-4-fullhd is-offset-1-fullhd">
+            <figure class="image is-square">
+              <img src="../images/undraw_Camera_re_cnp4.svg">
+            </figure>
+          </div>
+          <div data-aos="fade-down" class="column
+          is-10-mobile is-offset-1-mobile
+          is-10-tablet is-offset-1-tablet
+          is-5-desktop is-offset-1-desktop
+          is-5-widescreen is-offset-1-widescreen
+          is-5-fullhd is-offset-1-fullhd">
+            <h1 class="titled title is-1 mb-6">
+              Kamu Mau Tambahan Apa Nichhhh?
+            </h1>
+            <div class="box">
+              <label class="label">Tambahan Pijit</label>
+              <div>
+                <div class="select is-normal">
+                  <select>
+                    <option selected disabled>--- Pilih Tambahan ---</option>
+                    <option>Kerokan</option>
+                    <option>Bekam</option>
+                    <option>Totok Wajah</option>
+                    <option>Other</option>
+                  </select>
+                </div>
+                <div class="field">
+                  <label class="label">Other</label>
+                  <div class="control">
+                    <input class="input" type="text" placeholder="Tambah apa boss?">
+                  </div>
+                </div>
+                <button class="button is-primary">Pilih Paket</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="hero is-white is-fullheight">
+    <div class="hero-body">
+      <div class="container">
+        <div class="columns  is-vcentered reverse-columns">
+          <div class="column
+          is-10-mobile 
+          is-10-tablet 
+          is-5-desktop 
+          is-5-widescreen 
+          is-5-fullhd " data-aos="fade-down">
+            <h1 class="title titled is-1 mb-6">
+              Pilihlah Aroma Minyak yang Kamu Inginkan!
+            </h1>
+            <div>
+              <div class="box is-size-6">
+                <label class="label">Aroma Minyak</label>
+                <div>
+                  <div class="select is-normal">
+                    <select>
+                      <option selected disabled>--- Pilih Minyak ---</option>
+                      <option>Peppermint: Meredakan Masalah Pencernaan</option>
+                      <option>Rosemary: Menghilangkan Rasa Nyeri</option>
+                      <option>Lavender: Menenangkan Tubuh dan Pikiran</option>
+                      <option>Lemon: Mengobati Stres dan Insomnia</option>
+                      <option>Pohon Teh: Mengobati Batuk dan Pilek</option>
+                    </select>
+                  </div>
+                  <button class="button is-primary">Pilih Minyak</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div data-aos="fade-right" class="column
+          is-10-mobile 
+          is-10-tablet 
+          is-4-desktop 
+          is-7-widescreen 
+          is-4-fullhd is-offset-1-fullhd">
+            <figure class="image is-square">
+              <img src="../images/undraw_Camera_re_cnp4.svg">
+            </figure>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="hero is-white is-fullheight">
+    <div class="hero-body">
+      <div class="container">
+        <div class="columns  is-vcentered">
+          <div data-aos="fade-left" class="column
+          is-10-mobile is-offset-1-mobile
+          is-10-tablet is-offset-1-tablet
+          is-4-desktop is-offset-1-desktop
+          is-4-widescreen is-offset-1-widescreen
+          is-4-fullhd is-offset-1-fullhd">
+            <figure class="image is-square">
+              <img src="../images/undraw_Camera_re_cnp4.svg">
+            </figure>
+          </div>
+          <div data-aos="fade-down" class="column
+          is-10-mobile is-offset-1-mobile
+          is-10-tablet is-offset-1-tablet
+          is-5-desktop is-offset-1-desktop
+          is-5-widescreen is-offset-1-widescreen
+          is-5-fullhd is-offset-1-fullhd">
+            <h1 class="titled title is-1 mb-6">
+              Mau Pilih yang Mijit Nggak?
+            </h1>
+            <div>
+              <div class="box is-size-6">
+                <div class="field">
+                  <label class="label">Nama Tukang Pijit</label>
+                  <div class="control">
+                    <input class="input" placeholder="Nama Doi ">
+                    <div class="field">
+                      <label class="label"> Notes </label>
+                      <div class="control">
+                        <input class="input" placeholder="Mau Tambah Apa Nichh?">
+                      </div>
+
+                    </div>
+                    <button class="button is-primary">NEXT</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="hero is-white is-fullheight">
+    <div class="hero-body">
+      <div class="container">
+        <div class="columns  is-vcentered reverse-columns">
+          <div class="column
+          is-10-mobile 
+          is-10-tablet 
+          is-5-desktop 
+          is-5-widescreen 
+          is-5-fullhd " data-aos="fade-down">
+            <h1 class="title titled is-1 mb-6">
+              Kasih Tau Kami Apa Lagi yang Kamu Butuhakan!
+            </h1>
+            <div class="box">
+              <div class="field">
+                <div class="control">
+                  <textarea class="textarea" placeholder="Tulis Kebutuhan Tambahanmu Kaka!"></textarea>
+                </div>
+              </div>
+              <button class="button is-primary">Submit</button>
+            </div>
+          </div>
+          <div data-aos="fade-right" class="column
+          is-10-mobile 
+          is-10-tablet 
+          is-4-desktop 
+          is-7-widescreen 
+          is-4-fullhd is-offset-1-fullhd">
+            <figure class="image is-square">
+              <img src="../images/undraw_Camera_re_cnp4.svg">
+            </figure>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="hero is-medium has-text-centered">
+    <div class="hero-body">
+      <div class="container">
+        <div class="columns is-centered">
+          <div data-aos="zoom-in-up" class="column is-8">
+            <h1 class="title titled is-1 mb-6">
+              <span id="type-down"></span>
+            </h1>
+            <h1 class="title titled is-1 mb-6">
+              Pijit Panggilan Kesehatan MEGATRON
+            </h1>
+            <h2 class="subtitle subtitled">
+              Setelah Pijit Badan Terasa Sekuat MEGATRON
+            </h2>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/TypewriterJS/2.13.1/core.min.js"></script>
+  <script>
+    new Typewriter('#typewriter', {
+      strings: ['PPKM', 'PPKM'],
+      autoStart: true,
+      loop: true,
+    });
+    new Typewriter('#type-down', {
+      strings: ['PPKM', 'PPKM'],
+      autoStart: true,
+      loop: true,
+    });
+  </script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      once: true
+    });
+  </script>
+</body>
+
+</html>

@@ -11,6 +11,11 @@
   color: #0a0a0a;
 }
 
+#date-container {
+  /* margin-top: 10px; */
+  border: 30px;
+}
+
 #date {
   color: #c2c2c2;
   border-color: #c2c2c2;
@@ -18,4 +23,5 @@
 
 #date-tag {
   color: #c2c2c2;
+  font-size: 1rem;
 }

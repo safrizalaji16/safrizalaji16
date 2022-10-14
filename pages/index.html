@@ -24,11 +24,6 @@
             <a id="logo" class="navbar-item" href="../">
               <img src="/assets/kindpng_1846910.png" alt="Logo">
             </a>
-            <span class="navbar-burger burger" data-target="navbarMenu">
-              <span></span>
-              <span></span>
-              <span></span>
-            </span>
           </div>
           <div id="navbarMenu" class="navbar-menu">
             <div class="navbar-end">
@@ -77,25 +72,20 @@
             Pijit Panggilan Kesehatan MEGATRON
           </h1>
           <h2 class="subtitle">
-            Setelah Pijit Jadi Sekuat MEGATRON
+            Setelah Pijit Badan Terasa Sekuat MEGATRON
           </h2>
-          <!-- <div class="box">
-            <div class="field is-grouped">
-              <p class="control is-expanded">
-                <input class="input" type="text" placeholder="Enter your email">
-              </p>
-              <p class="control">
-                <a class="button is-info">
-                  Notify Me
-                </a>
-              </p>
-            </div>
-          </div> -->
           <div class="box">
             <form>
-              <div class="field">
-                <div class="control">
-                  <input class="input" type="name" placeholder="Name">
+              <div class="columns my-0">
+                <div class="field column my-0 is-three-quarter">
+                  <div class="control">
+                    <input class="input" type="name" placeholder="Name">
+                  </div>
+                </div>
+                <div class="gender column">
+                  <div class="control">
+                    <input class="input" type="text" placeholder="Gender">
+                  </div>
                 </div>
               </div>
               <div class="field">
@@ -109,20 +99,20 @@
                     <input class="input" type="number" placeholder="Phone Number">
                   </div>
                 </div>
-                <div class="gender column">
-                  <div class="control">
-                    <input class="input" type="text" placeholder="Gender">
-                  </div>
+                <div id="date-container" class="column mt-2 is-outlined">
+                  <form action="/action_page.php">
+                    <label id="date-tag">Pilih Tanggal:</label>
+                    <input id="date" type="date">
+                  </form>
                 </div>
               </div>
               <div>
-                <form action="/action_page.php">
-                  <label id="date-tag">Pilih Tanggal:</label>
-                  <input id="date" type="date">
-                </form>
+                <label class="checkbox mt-3">
+                  <input type="checkbox">
+                  I agree to the <a href="#">terms and conditions</a>
+                </label>
               </div>
-              <br>
-              <button class="button is-primary">Order</button>
+              <button class="button is-primary mt-2">Order</button>
             </form>
           </div>
           <br>
